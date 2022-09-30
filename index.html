@@ -21,9 +21,9 @@
         font-family: "Roboto";
       }
       .container {
-        padding-left: 32px;
-        padding-right: 32px;
-        padding-top: 24px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 16px;
         padding-bottom: 12px;
       }
 
@@ -60,16 +60,22 @@
         line-height: 22px;
       }
 
+      h1 {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 22px;
+      }
+
       p {
         font-weight: 400;
-        font-size: 14px;
-        line-height: 22px;
+        font-size: 13px;
+        line-height: 20px;
       }
 
       li {
         font-weight: 400;
-        font-size: 14px;
-        line-height: 22px;
+        font-size: 13px;
+        line-height: 20px;
         text-decoration: none;
         margin-left: 6px;
       }
@@ -93,8 +99,32 @@
         padding-top: 10px;
         padding-bottom: 10px;
       }
+      .read-more-spacer {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
 
       @media screen and (max-width: 550px) {
+        .header-left {
+          width: 45% !important;
+          margin-right: 4% !important;
+        }
+        .header-right {
+          width: 45% !important;
+        }
+
+        #headline {
+          font-size: 16px;
+          margin-top: 10px;
+        }
+        .first-column {
+          width: 100% !important;
+          margin-right: 0 !important;
+          margin-bottom: 25px !important;
+        }
+        .second-column {
+          width: 100% !important;
+        }
         .first-card {
           width: 100% !important;
           margin-right: 0 !important;
@@ -110,381 +140,587 @@
     </style>
     <title>Accuknox Monthly Newsletter</title>
   </head>
-  <body style="max-width: 600px; margin: 0 auto; background-color: white">
+  <body style="max-width: 750px; margin: 0 auto; background-color: white">
     <div class="container">
       <table>
         <!-- Start of Header -->
         <tr>
           <td>
             <!-- Logo -->
-            <div style="text-align: center; vertical-align: middle">
-              <div style="display: inline-block; width: 45%; margin-right: 19%">
-                <img
-                  src="./images/accuknox-logo.svg"
-                  alt="Accuknox Logo"
-                  style="width: 100%; height: auto"
-                />
-              </div>
-              <div
-                style="display: inline-block; width: 35%; vertical-align: 15px"
-              >
-                <p
-                  style="color: #7c7c7c; letter-spacing: 3px; text-align: right"
-                >
-                  NEWSLETTER
-                </p>
-              </div>
+            <div
+              class="header-left"
+              style="display: inline-block; width: 30%; margin-right: 39%"
+            >
+              <img
+                src="./images/accuknox-logo.svg"
+                alt="Accuknox Logo"
+                style="width: 100%; height: auto"
+              />
             </div>
-
-            <!-- NewsLetter -->
-            <div style="height: 25px"></div>
-            <div style="text-align: center; color: #5c5a63">
-              <h5>Zero Trust Cloud-Native Application Protection</h5>
-              <div style="height: 5px"></div>
-              <h5>Monthly Update</h5>
-              <div style="height: 10px"></div>
-              <p>August 2022</p>
+            <div
+              class="header-right"
+              style="display: inline-block; width: 30%; vertical-align: 5px"
+            >
+              <p style="letter-spacing: 2px; text-align: right">NEWSLETTER</p>
+              <h5 style="text-align: right">October 2022</h5>
             </div>
           </td>
         </tr>
         <!-- End of Header -->
 
-        <!-- Start of Banner -->
+        <!--Start of Headline -->
         <tr>
           <td>
-            <div style="margin-top: 30px; color: rgba(0, 0, 0, 0.75)">
-              <img
-                src="./images/banner.svg"
-                alt="Banner Image"
-                style="width: 100%; height: 130px"
-              />
-              <div style="height: 10px"></div>
-              <h3>KubeArmor on AWS Bottlerocket</h3>
-              <div style="height: 5px"></div>
-              <p>
-                Rahul Jadhav, co-founder of Accuknox, showcases the capabilities
-                of KubeArmor on Bottlerocket. It is an operating system designed
-                for hosting containers.
-              </p>
-              <div style="height: 8px"></div>
-              <a
-                href="https://www.youtube.com/watch?v=esXWUDlU-ck"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Watch Video</a
-              >
-            </div>
+            <h1 id="headline" style="text-align: center; margin-top: 20px">
+              Zero Trust CNAPP (Cloud-Native Application Protection Platform)
+            </h1>
           </td>
         </tr>
-        <!-- End of Banner -->
+        <!--End of Headline -->
 
         <!-- Start of Two Column Layout -->
         <tr>
           <td>
-            <div style="margin-top: 30px">
-              <!-- First Card -->
+            <div style="margin-top: 30px; color: rgba(0, 0, 0, 0.75)">
+              <!-- Start of First Column -->
               <div
-                class="first-card"
-                style="
-                  width: 47%;
-                  color: rgba(0, 0, 0, 0.75);
-                  display: inline-block;
-                  margin-right: 5%;
-                "
+                class="first-column"
+                style="display: inline-block; width: 64%; margin-right: 3%"
               >
-                <img
-                  src="./images/accuknox-ebook.svg"
-                  alt="Accuknox CNAPP"
-                  style="width: 100%; height: auto"
-                />
-                <div style="height: 10px"></div>
-                <h4>
-                  Accuknox - Zero Trust CNAPP (Cloud Native Application
-                  Protection Platform) - eBook
-                </h4>
-                <div style="height: 5px"></div>
-                <p>
-                  Read our comprehensive eBook that emphasises key elements of
-                  Zero Trust and more.
-                </p>
-                <div style="height: 10px"></div>
-                <a
-                  href="https://www.accuknox.com/download-ebook"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Download Now</a
-                >
-              </div>
+                <div>
+                  <!-- First Card -->
+                  <div
+                    class="first-card"
+                    style="width: 47%; display: inline-block; margin-right: 5%"
+                  >
+                    <img
+                      src="./images/devsecops-webinar.svg"
+                      alt="DevSecOps Webinar"
+                      style="width: 100%; height: auto"
+                    />
+                    <div style="height: 10px"></div>
+                    <h5>
+                      Delivering DevSecOps in Zero Trust Model | Webinar | 27
+                      Mins
+                    </h5>
+                    <div style="height: 5px"></div>
+                    <p>
+                      In this video learn about, KubeArmor Architectural
+                      Elements & functionality. Enabling DevSecOps Engineers to
+                      leverage the CI/CD integration & more..
+                    </p>
+                    <div style="height: 10px"></div>
+                    <a
+                      href="https://www.youtube.com/watch?v=d16OvW17ehs"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Watch Now</a
+                    >
+                  </div>
 
-              <!-- Second Card -->
-              <div
-                class="second-card"
-                style="
-                  width: 47%;
-                  color: rgba(0, 0, 0, 0.75);
-                  display: inline-block;
-                "
-              >
-                <img
-                  src="./images/open-horizon.svg"
-                  alt="Open Horizon Pic"
-                  style="width: 100%; height: auto"
-                />
-                <div style="height: 10px"></div>
-                <h4>KubeArmor supports IBM Open Horizon Edge Security</h4>
-                <div style="height: 5px"></div>
-                <ul>
-                  <li>Observability for Edge Workloads</li>
-                  <li>Observability for Edge Host Agent</li>
-                  <li>Containerized Edge Workload Protection</li>
-                </ul>
-                <div style="height: 10px"></div>
-                <a
-                  href="https://www.youtube.com/watch?v=691AlW_GE1k&t=3s"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Watch Video</a
-                >
+                  <!-- Second Card -->
+                  <div
+                    class="second-card"
+                    style="width: 47%; display: inline-block"
+                  >
+                    <img
+                      src="./images/kubearmor-1yr.svg"
+                      alt="KubeArmor 1st Anniversary"
+                      style="width: 100%; height: auto"
+                    />
+                    <div style="height: 10px"></div>
+                    <h5>
+                      KubeArmor: 1 Year Anniversary Past, Present, and Future
+                      with:
+                    </h5>
+                    <div style="height: 5px"></div>
+                    <ul>
+                      <li>440+ Stargazers on Github</li>
+                      <li>160,000+ KubeArmor downloads from GitHub</li>
+                      <li>60+ Contributors (3x growth since May 2021)</li>
+                    </ul>
+                    <div style="height: 10px"></div>
+                    <a
+                      href="https://www.accuknox.com/blog/kubearmor-1-year-anniversary-past-present-and-future"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+
+                <div style="margin-top: 20px">
+                  <!-- First Card -->
+                  <div
+                    class="first-card"
+                    style="width: 47%; display: inline-block; margin-right: 5%"
+                  >
+                    <img
+                      src="./images/cnapp-ebook.svg"
+                      alt="CNAPP Audio Ebook"
+                      style="width: 100%; height: auto"
+                    />
+                    <div style="height: 10px"></div>
+                    <h5>Accuknox CNAPP - Audio eBook</h5>
+                    <div style="height: 5px"></div>
+                    <p>
+                      This Audio eBook comprises of why Zero Trust is mandatory
+                      for the Cloud native application security and
+                      summarization of AccuKnox Enterprise features.
+                    </p>
+                    <div style="height: 10px"></div>
+                    <a
+                      href="https://www.youtube.com/watch?v=ODrM7SvxZwE"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Watch Now</a
+                    >
+                  </div>
+
+                  <!-- Second Card -->
+                  <div
+                    class="second-card"
+                    style="width: 47%; display: inline-block"
+                  >
+                    <img
+                      src="./images/log4j.svg"
+                      alt="Runtime Security against Log4J"
+                      style="width: 100%; height: auto"
+                    />
+                    <div style="height: 10px"></div>
+                    <h5>
+                      AccuKnox SaaS Provides Runtime Security against Log4j | 6
+                      Mins
+                    </h5>
+                    <div style="height: 5px"></div>
+                    <p>
+                      In this video, learn the step by step process of
+                      exploiting & mitigating the Log4j vulnerability & more..
+                    </p>
+                    <div style="height: 10px"></div>
+                    <a
+                      href="https://www.youtube.com/watch?v=49xZa_QEVps"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Watch Now</a
+                    >
+                  </div>
+                </div>
+
+                <div style="margin-top: 20px">
+                  <!-- First Card -->
+                  <div
+                    class="first-card"
+                    style="width: 47%; display: inline-block; margin-right: 5%"
+                  >
+                    <img
+                      src="./images/aws-bottlerocket.svg"
+                      alt="AWS Bottlerocket"
+                      style="width: 100%; height: auto"
+                    />
+                    <div style="height: 10px"></div>
+                    <h5>
+                      AccuKnox delivers Zero Trust Security for AWS Bottlerocket
+                      | 12 Mins
+                    </h5>
+                    <div style="height: 5px"></div>
+                    <p>
+                      In this video, the AWS BottleRocket support with ability
+                      to secure access of K8s Credentials & more..
+                    </p>
+                    <div style="height: 10px"></div>
+                    <a
+                      href="https://www.youtube.com/watch?v=esXWUDlU-ck&feature=youtu.be"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Watch Now</a
+                    >
+                  </div>
+
+                  <!-- Second Card -->
+                  <div
+                    class="second-card"
+                    style="width: 47%; display: inline-block"
+                  >
+                    <img
+                      src="./images/open-horizon.svg"
+                      alt="IBM Open Horizon"
+                      style="width: 100%; height: auto"
+                    />
+                    <div style="height: 10px"></div>
+                    <h5>
+                      AccuKnox delivers Zero Trust Security for IBM Open
+                      Horizon, IoT/Edge | 11 Mins
+                    </h5>
+                    <div style="height: 5px"></div>
+                    <p>
+                      In this video, the use cases covered are observability for
+                      edge and containerized workloads & more..
+                    </p>
+                    <div style="height: 10px"></div>
+                    <a
+                      href="https://www.youtube.com/watch?v=691AlW_GE1k"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Watch Now</a
+                    >
+                  </div>
+                </div>
+
+                <hr size="1" style="margin-top: 20px; margin-bottom: 20px" />
+                <h4>Events</h4>
+
+                <div style="margin-top: 20px">
+                  <!-- First Card -->
+                  <div
+                    class="first-card"
+                    style="width: 47%; display: inline-block; margin-right: 5%"
+                  >
+                    <img
+                      src="./images/kubecon.svg"
+                      alt="Kubecon CloudNative 2022"
+                      style="width: 100%; height: auto"
+                    />
+                    <div style="height: 10px"></div>
+                    <h5>
+                      AccuKnox’s presentation at KubeCon | CloudNativeCon North
+                      America, 26 October, 2022
+                    </h5>
+                    <div style="height: 5px"></div>
+                    <p>
+                      Ankur & Barun, Software Engineers of AccuKnox, will be
+                      talking on “Armoring Cloud native workloads with LSM
+                      superpowers”
+                    </p>
+                    <div style="height: 10px"></div>
+                    <a
+                      href="https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/program/schedule/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Register Now</a
+                    >
+                  </div>
+
+                  <!-- Second Card -->
+                  <div
+                    class="second-card"
+                    style="width: 47%; display: inline-block"
+                  >
+                    <img
+                      src="./images/one-summit.svg"
+                      alt="One Summit 2022"
+                      style="width: 100%; height: auto"
+                    />
+                    <div style="height: 10px"></div>
+                    <h5>
+                      Zero Trust Runtime Security for Edge at ONE Summit, 15
+                      November, 2022
+                    </h5>
+                    <div style="height: 5px"></div>
+                    <p>
+                      Rahul Jadav, co-founder, AccuKnox, to talk about “Zero
+                      Trust and Runtime Security for Edge Workloads”, at the
+                      Sheraton Grand in Seattle, Washington
+                    </p>
+                    <div style="height: 10px"></div>
+                    <a
+                      href="https://events.linuxfoundation.org/one-summit-north-america/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Register Now</a
+                    >
+                  </div>
+                </div>
+
+                <div style="margin-top: 20px">
+                  <!-- First Card -->
+                  <div
+                    class="first-card"
+                    style="width: 47%; display: inline-block; margin-right: 5%"
+                  >
+                    <img
+                      src="./images/india-foss.svg"
+                      alt="India Foss 2022"
+                      style="width: 100%; height: auto"
+                    />
+                    <div style="height: 10px"></div>
+                    <h5>
+                      Exploring eBPF Superpowers by Barun Acharya | 25 Mins
+                    </h5>
+                    <div style="height: 5px"></div>
+                    <p>
+                      KubeArmor is a cloud native runtime security enforcement
+                      system that leverages eBPF superpowers to help protect
+                      your workloads.
+                    </p>
+                    <div style="height: 10px"></div>
+                    <a
+                      href="https://www.youtube.com/watch?v=Nxq5UjhsQe4"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Watch Now</a
+                    >
+                  </div>
+
+                  <!-- Second Card -->
+                  <div
+                    class="second-card"
+                    style="width: 47%; display: inline-block"
+                  >
+                    <img
+                      src="./images/multicloud.svg"
+                      alt="OpenSource event 2022"
+                      style="width: 100%; height: auto"
+                    />
+                    <div style="height: 10px"></div>
+                    <h5>Data Management & Security in Multicloud, Sep 2022</h5>
+                    <div style="height: 5px"></div>
+                    <p>
+                      Rahul Jadav, to talk about the need for security in
+                      containers & multicloud at one of the biggest OpenSource
+                      event in India.
+                    </p>
+                    <div style="height: 10px"></div>
+                    <a
+                      href="https://youtu.be/691AlW_GE1k"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+
+                <hr size="1" style="margin-top: 20px; margin-bottom: 20px" />
+                <h4>Demos</h4>
+
+                <div style="margin-top: 20px">
+                  <!-- First Card -->
+                  <div
+                    class="first-card"
+                    style="width: 47%; display: inline-block; margin-right: 5%"
+                  >
+                    <img
+                      src="./images/ddos-mitigation.svg"
+                      alt="DDOS Mitigation"
+                      style="width: 100%; height: auto"
+                    />
+                    <div style="height: 10px"></div>
+                    <h5>
+                      AccuKnox SaaS Provides Runtime Security against
+                      TNTBotinger | DDoS Mitigation | 4 Mins
+                    </h5>
+                    <div style="height: 5px"></div>
+                    <p>
+                      In this video, learn how to detect and mitigate a
+                      cryptojacking assault in minutes using AccuKnox SaaS
+                      solutions.
+                    </p>
+                    <div style="height: 10px"></div>
+                    <a
+                      href="https://www.youtube.com/watch?v=hZ3nUEviAUA"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Watch Now</a
+                    >
+                  </div>
+
+                  <!-- Second Card -->
+                  <div
+                    class="second-card"
+                    style="width: 47%; display: inline-block"
+                  >
+                    <img
+                      src="./images/edge-workloads.svg"
+                      alt="IoT Edge Workloads"
+                      style="width: 100%; height: auto"
+                    />
+                    <div style="height: 10px"></div>
+                    <h5>Protect IoT Edge workloads with KubeArmor</h5>
+                    <div style="height: 10px"></div>
+                    <p>
+                      With the increase in IOT devices and the need to process
+                      information in real-time, makes the Security for IoT/Edge
+                      computing a necessity. Learn more on how KubeArmor is the
+                      ideal engine..
+                    </p>
+                    <div style="height: 10px"></div>
+                    <a
+                      href="https://youtu.be/691AlW_GE1k"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Watch Now</a
+                    >
+                  </div>
+                </div>
               </div>
+              <!-- End of First Column -->
+
+              <!-- Start of Second Column -->
+              <div
+                class="second-column"
+                style="display: inline-block; width: 32%"
+              >
+                <div style="background-color: #f1f1f1; padding: 16px">
+                  <h4>Press Releases:</h4>
+
+                  <div style="margin-top: 20px">
+                    <h5>
+                      AccuKnox Selected to Join 5G Open Innovation Lab
+                      Development Program
+                    </h5>
+                    <p>
+                      AccuKnox has formally joined the 5G Open Innovation Lab’s
+                      (“5GOILab”) Fall 2022 program. The founding corporate
+                      partners that support the Lab include Amdocs, Avanade,
+                      Dell Technologies, Ericsson, F5, Intel, Microsoft,
+                      Spirent, T-Mobile, and VMware. Read the press release from
+                      5G Labs here announcing the fall cohort.
+                    </p>
+                    <div class="read-more-spacer"></div>
+                    <a
+                      href="https://www.accuknox.com/accuknox-selected-to-join-5g-open-innovation-lab-development-program"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Read More</a
+                    >
+                  </div>
+
+                  <div style="margin-top: 20px">
+                    <h5>
+                      AccuKnox to work with SRI on Prestigious National Science
+                      Foundation (NSF) 5G Security Research Award
+                    </h5>
+                    <p>
+                      AccuKnox, Inc., a spinout of SRI International, have
+                      together received a research award from the prestigious
+                      NSF Convergence Accelerator focused on the research topic,
+                      “Securely Operating Through 5G Infrastructure”. In this
+                      research project, AccuKnox will work with SRI and
+                      subcontractor Ohio State University on a range of areas
+                      related to 5G Security.
+                    </p>
+                    <div class="read-more-spacer"></div>
+                    <a
+                      href="https://www.accuknox.com/accuknox-to-work-with-sri-international-on-nsf-5g-security-research-award"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  style="
+                    background-color: #e9f6ff;
+                    padding: 16px;
+                    margin-top: 30px;
+                  "
+                >
+                  <h4>Industry Buzz:</h4>
+
+                  <div style="margin-top: 20px">
+                    <h5 style="color: #2173ff">
+                      Uber Hack: What we know, Lessons learned
+                    </h5>
+                    <p>
+                      On Sept 16th, an 18 year old hacker jumped on the Uber
+                      Slack channel to announce he managed to hack Uber. Their
+                      entire network was probably  impacted including their
+                      domain admin, AWS admin, vSphere admin, G-suite SA.
+                    </p>
+                    <div class="read-more-spacer"></div>
+                    <a
+                      href="https://www.learnwithnic.com/programs/uber-hack"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Read More</a
+                    >
+                  </div>
+
+                  <div style="margin-top: 20px">
+                    <h5 style="color: #2173ff">
+                      Twilio and CloudFlare… A tale of two attacks
+                    </h5>
+                    <p>
+                      Highly sophisticated Twilio & Cloudflare’s phishing
+                      attacks were performed on over 135+ organizations by
+                      attackers to gain unauthorized access.
+                    </p>
+                    <div class="read-more-spacer"></div>
+                    <a
+                      href="https://www.accuknox.com/blog/twilio-and-cloudflare-a-tale-of-two-attacks"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Read More</a
+                    >
+                  </div>
+
+                  <div style="margin-top: 20px">
+                    <h5 style="color: #2173ff">
+                      Software Defined Weapons with Kyle Fox, U.S. Air Force
+                    </h5>
+                    <p>
+                      Learn about the rise of Software Defined Weapons, what are
+                      they? How can DevSecOps really be leveraged for jets,
+                      nuclear systems?
+                    </p>
+                    <div class="read-more-spacer"></div>
+                    <a
+                      href="https://www.youtube.com/watch?v=hTUxR7wzoQA"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Watch Now</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  style="
+                    background-color: #253661;
+                    margin-top: 30px;
+                    padding: 28px;
+                  "
+                >
+                  <h3 style="color: #ffffff; margin-bottom: 10px">
+                    AccuKnox’s Opensource solution KubeArmor restricts any
+                    malicious behavior of cloud-native workloads at runtime.
+                  </h3>
+                  <p style="color: #ffffff; margin-bottom: 26px">
+                    Built by the creators of AccuKnox, KubeArmor's cloud-native
+                    policy engine automates & simplifies the creation and
+                    application of policies automatically in minutes.
+                  </p>
+                  <a
+                    style="
+                      padding: 12px 24px;
+                      background: #2173ff;
+                      color: #fff;
+                      display: block;
+                      margin: auto;
+                      width: fit-content;
+                      font-weight: 600;
+                      letter-spacing: 0.02rem;
+                    "
+                    href="https://help.accuknox.com/open-source/quick_start_guide/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Try Open Source
+                  </a>
+                </div>
+              </div>
+              <!-- End of Second Column -->
             </div>
           </td>
         </tr>
         <!-- End of Two Column Layout -->
 
-        <!-- Start of Articles -->
-        <tr>
-          <td>
-            <hr style="margin-top: 30px; margin-bottom: 30px"></hr>
-            <div style="color: rgba(0, 0, 0, 0.75)">
-              <h2 style="margin-bottom: 8px">
-                How KubeArmor improves on AWS Bottlerocket Security?
-              </h2>
-              <p style="margin-bottom: 8px">
-                KubeArmor provides enhanced security by using BPF-LSM to protect
-                Bottlerocket containers from within. By limiting system behavior
-                with respect to Files, Processes & Network connections.
-              </p>
-              <a
-                href="https://github.com/kubearmor/KubeArmor/wiki/v0.5-Release-Blog#support-for-aws-bottlerocket--and-amazon-linux-2-latest-image"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Read more</a
-              >
-            </div>
-          </td>
-        </tr>
-
-        <tr>
-          <td>
-            <hr style="margin-top: 30px; margin-bottom: 30px"></hr>
-            <div style="color: rgba(0, 0, 0, 0.75)">
-              <h2 style="margin-bottom: 8px">
-                CNCF Kubernetes Policy Management Whitepaper
-              </h2>
-              <p style="margin-bottom: 8px">
-                Accuknox’s contribution to the CNCF Kubernetes policy management
-                was recognized. Learn why Kubernetes Policy Management is
-                becoming obligatory for security?
-              </p>
-              <a
-                href="https://www.accuknox.com/download-cncf-guide"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Download Now</a
-              >
-            </div>
-          </td>
-        </tr>
-
-        <tr>
-          <td>
-            <hr style="margin-top: 30px; margin-bottom: 15px"></hr>
-          </td>
-        </tr>
-
-        <!-- End of Articles -->
-
-        <!-- Start of Events -->
-        <tr>
-          <td>
-            <h4 style="text-align: center; color: rgba(0, 0, 0, 0.75)">
-              Events
-            </h4>
-            <div style="margin-top: 20px; margin-bottom: 30px">
-              <!-- First Card -->
-              <div
-                class="first-card"
-                style="
-                  width: 47%;
-                  color: rgba(0, 0, 0, 0.75);
-                  display: inline-block;
-                  margin-right: 5%;
-                "
-              >
-                <img
-                  src="./images/barun.svg"
-                  alt="KubeCon & CloudNative North America 2022"
-                  style="width: 100%; height: auto"
-                />
-                <div style="height: 10px"></div>
-                <h4>
-                  AccuKnox’s presentation at KubeCon & CloudNative North America
-                  2022 (October 24-28)
-                </h4>
-                <div style="height: 5px"></div>
-                <p>
-                  Barun will talk about how KubeArmor leverages LSM superpowers
-                  to abstract away the complexities to help protect modern cloud
-                  native workloads.
-                </p>
-                <div style="height: 10px"></div>
-                <a
-                  href="https://kccncna2022.sched.com/speaker/barun.acharya1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Read More</a
-                >
-              </div>
-
-              <!-- Second Card -->
-              <div
-                class="second-card"
-                style="
-                  width: 47%;
-                  color: rgba(0, 0, 0, 0.75);
-                  display: inline-block;
-                "
-              >
-                <div>
-                  <img
-                    src="./images/rahul.svg"
-                    alt="ONE Summit 2022"
-                    style="width: 100%; height: auto"
-                  />
-                </div>
-                <div style="height: 10px"></div>
-                <h4>
-                  Zero Trust and Runtime Security for Edge at ONE Summit 2022
-                  (November 15-16)
-                </h4>
-                <div style="height: 5px"></div>
-                <p>
-                  Rahul will focus on best practices, technical challenges, and
-                  business opportunities across Zero Trust Runtime Security for
-                  IoT Edge workloads.
-                </p>
-                <div style="height: 10px"></div>
-                <a
-                  href="https://events.linuxfoundation.org/one-summit-north-america/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Read More</a
-                >
-              </div>
-            </div>
-          </td>
-        </tr>
-        <!-- End of Events -->
-
-        <!-- Start of Industry Buzz -->
-        <tr style="background: #e9f6ff; color: rgba(0, 0, 0, 0.75)">
-          <td id="industry-buzz-section" style="padding: 32px">
-            <h4>Industry Buzz:</h4>
-            <div style="margin-top: 20px">
-              <h2 style="color: #2173ff; margin-bottom: 8px">
-                Kubernetes releases latest v1.25 - Combiner
-              </h2>
-              <p style="margin-top: 0; margin-bottom: 8px">
-                This release includes a total of 40 enhancements. It also has
-                two features being deprecated/removed.
-              </p>
-              <a
-                href="https://kubernetes.io/blog/2022/08/23/kubernetes-v1-25-release/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Read more</a
-              >
-            </div>
-            <div style="margin-top: 30px">
-              <h2 style="color: #2173ff; margin-bottom: 8px">
-                Kyverno moves to the CNCF Incubator
-              </h2>
-              <p style="margin-top: 0; margin-bottom: 8px">
-                "As Kubernetes adoption grows, policies have become critical to
-                ensure security, governance, and compliance", said Jim Bugwadia,
-                co-creator of Kyverno.
-              </p>
-              <a
-                href="https://www.cncf.io/blog/2022/07/12/kyverno-moves-to-the-cncf-incubator/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Read more</a
-              >
-            </div>
-            <div style="margin-top: 30px">
-              <h2 style="color: #2173ff; margin-bottom: 8px">
-                KubeArmor to Protect IoT Edge Workloads
-              </h2>
-              <p style="margin-top: 0; margin-bottom: 8px">
-                With v0.5.5 release, KubeArmor now supports standalone
-                un-orchestrated containers. KubeArmor in this mode supports both
-                enforcement and observability of the host and the containers
-                running on it.
-              </p>
-              <a
-                href="https://github.com/kubearmor/KubeArmor/wiki/KubeArmor-to-protect-IoT-Edge-containerized-workloads"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Read more</a
-              >
-            </div>
-          </td>
-        </tr>
-        <!-- End of Industry Buzz -->
-
-        <!-- Start of KubeArmor -->
-        <tr>
-          <td>
-            <div
-              style="background: #253661; padding: 48px 32px; margin-top: 30px"
-            >
-              <h3
-                style="
-                  text-align: center;
-                  color: #ffffff;
-                  margin-bottom: 20px;
-                  line-height: 24px;
-                "
-              >
-                AccuKnox is a core contributor to CNCF, Kubernetes Runtime
-                Security Platform, KubeArmor.
-              </h3>
-              <a
-                style="
-                  padding: 12px 24px;
-                  background: #2173ff;
-                  color: #fff;
-                  display: block;
-                  margin: auto;
-                  width: fit-content;
-                  font-weight: 600;
-                  letter-spacing: 0.02rem;
-                "
-                href="https://help.accuknox.com/open-source/quick_start_guide/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Visit KubeArmor
-              </a>
-            </div>
-          </td>
-        </tr>
-        <!-- End of KubeArmor -->
-
         <!-- Start of About the Author -->
         <tr>
           <td>
-            <div style="margin-top: 50px; color: rgba(0, 0, 0, 0.75)">
+            <hr size="1" style="margin-top: 25px; margin-bottom: 25px" />
+
+            <div style="margin-top: 25px; color: rgba(0, 0, 0, 0.75)">
               <h4 style="margin-bottom: 20px">About the Editor</h4>
               <div>
                 <div style="display: inline-block; width: 22%">
@@ -494,14 +730,14 @@
                     style="width: 100%; height: 150px"
                   />
                 </div>
-                <div style="display: block; width: 74%; float: right">
-                  <span style="display: inline-block">
-                    <h3 style="margin: 0">Nat Natraj</h3>
-                    <p style="margin: 0; color: #787878bf">
+                <div style="display: block; width: 76%; float: right">
+                  <div style="display: inline-block">
+                    <h3>Nat Natraj</h3>
+                    <p style="color: #787878bf">
                       CEO, Co-Founder, Business - AccuKnox
                     </p>
-                  </span>
-                  <span style="float: right">
+                  </div>
+                  <div style="float: right">
                     <a
                       href="https://www.linkedin.com/in/natrajiitb/"
                       target="_blank"
@@ -509,8 +745,8 @@
                     >
                       <img src="./images/linkedIn.svg" alt="LinkedIn" />
                     </a>
-                  </span>
-                  <p>
+                  </div>
+                  <p style="margin-top: 5px; margin-bottom: 5px">
                     Nat Natraj is the Co-Founder, and CEO of AccuKnox, a leader
                     in the Zero Trust Cloud Security space. Natraj has over 25
                     years of experience in leading high-growth Enterprise
@@ -518,6 +754,7 @@
                     CyberSecurity and SAAS solutions to Global 1000
                     organizations.
                   </p>
+                  <p>n@accuknox.com | +1 510 579 8785 | www.accuknox.com</p>
                 </div>
               </div>
             </div>
@@ -532,26 +769,26 @@
               style="
                 margin: 16px;
                 margin-top: 24px;
-                padding: 16px 0 8px 0;
+                padding: 16px 0 6px;
                 border-top: #d5d5d5 solid 1px;
               "
             >
               <a
-                style="padding: 8px"
+                style="padding: 6px"
                 href="https://www.youtube.com/channel/UCLqK0vGQTa2ctjnbNzvP52Q"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Subscribe to our Youtube</a
               >
               <a
-                style="padding: 8px"
+                style="padding: 6px"
                 href="https://www.linkedin.com/company/accuknox"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Follow us on LinkedIn</a
               >
               <a
-                style="padding: 8px"
+                style="padding: 6px"
                 href="https://twitter.com/AccuKnox"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -562,32 +799,17 @@
         </tr>
         <!-- End of Social Links-->
 
-        <!-- Start of Unsubscribe-->
-        <tr>
-          <td style="text-align: center">
-            <!-- TODO: Href missing -->
-            <a style="padding: 8px; text-decoration: none" href="#"
-              >Unsubscribe</a
-            >
-          </td>
-        </tr>
-        <!-- End of Unsubscribe-->
-
-        <tr>
-          <td class="spacer"></td>
-        </tr>
-        
         <!-- Start of Footer -->
         <tr>
           <td
             style="
-              background: #accfea;
-              color: #000361bf;
+              background: #eef2f5;
+              color: #000361;
               text-align: center;
               padding: 16px 32px;
             "
           >
-            <p>Accuknox provides Runtime Kubernetes Security</p>
+            <p>Accuknox provides Cloud Native Application Protection</p>
             <p>Accuknox &#169; 2022. All Rights Reserved.</p>
           </td>
         </tr>
